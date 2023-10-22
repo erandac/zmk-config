@@ -11,6 +11,7 @@
 #define BASE 0
 #define NAV 1
 #define NUM 2
+#define SYM 3
 
 #define U_MT(MOD, TAP) &mt MOD TAP
 #define U_LT(LAYER, TAP) &lt LAYER TAP
@@ -29,7 +30,7 @@
 //                    | GUI | SPC | BSPC|      | ESC | RET  | ALT |
                         bindings = <
    &kp TAB     &kp Q         &kp W         &kp E          &kp R          &kp T                 &kp Y      &kp U      &kp I     &kp O   &kp P    &none 
-   &kp LCTRL   &kp A         &kp S         U_LT(NUM,D)    U_LT(NAV, F)   &kp G                 &kp H      &kp J      &kp K     &kp L   &kp SEMI &kp SQT
+   &kp LCTRL   &kp A         U_LT(SYM,S)   U_LT(NUM,D)    U_LT(NAV, F)   &kp G                 &kp H      &kp J      &kp K     &kp L   &kp SEMI &kp SQT
    &kp LSHFT   &kp Z         &kp X         &kp C          &kp V          &kp B                 &kp N      &kp M      &kp COMMA &kp DOT &kp FSLH &kp RSHFT
                                            &kp LCMD       &kp SPACE      &kp BSPC              &kp ESC    &kp RET    &key_repeat
                         >;
@@ -48,10 +49,20 @@
                 num_layer {
                         bindings = <
    &none       &none      &none      &none      &none        &none          &kp LBKT     &kp N7     &kp N8     &kp N9   &kp RBKT   &none
-   &kp LSHFT   &none      &none      &none      &none        &none          &kp EQUAL    &kp N4     &kp N5     &kp N6   &kp SEMI   &none
+   &kp LSHFT   &none      &none      &none      &none        &none          &kp EQUAL    &kp N4     &kp N5     &kp N6   &kp SEMI   &kp RET
    &none       &none      &none      &none      &none        &none          &kp GRAVE    &kp N1     &kp N2     &kp N3   &kp BSLH   &none
                                      &kp LCMD   &kp SPACE    &kp BSPC       &kp DOT      &kp N0     &kp MINUS
                         >;
                 };
+
+                sym_layer {
+                        bindings = <
+   &none       &none      &none      &none      &none        &none          &kp LS(LBKT)      &kp LS(N7)       &kp LS(N8)    &kp LS(N9)   &kp LS(RBKT)   &none
+   &none       &none      &none      &none      &none        &none          &kp LS(EQUAL)     &kp LS(N4)       &kp LS(N5)    &kp LS(N6)   &kp LS(SEMI)   &kp RET
+   &none       &none      &none      &none      &none        &none          &kp LS(GRAVE)     &kp LS(N1)       &kp LS(N2)    &kp LS(N3)   &kp LS(BSLH)   &none
+                                     &kp LCMD   &kp SPACE    &kp BSPC       &kp LS(DOT)       &kp LS(N0)       &kp LS(MINUS)
+                        >;
+                };
+
         };
 };

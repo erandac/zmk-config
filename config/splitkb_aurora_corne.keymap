@@ -25,7 +25,7 @@
 
                 base_mac_layer {
                         bindings = <
-   &kp TAB     &kp Q         &kp W         &kp E          &kp R          &kp T                 &kp Y      &kp U      &kp I     &kp O   &kp P    &tog BASE_WIN 
+   &kp TAB     &kp Q         &kp W         &kp E          &kp R          &kp T                 &kp Y      &kp U      &kp I     &kp O   &kp P    &none 
    &kp LSHFT   &kp A         U_LT(SYM,S)   U_LT(NUM,D)    U_LT(NAV, F)   &kp G                 &kp H      &kp J      &kp K     &kp L   &kp SEMI &kp SQT
    &kp LCMD   &kp Z         &kp X         &kp C          &kp V          &kp B                 &kp N      &kp M      &kp COMMA &kp DOT &kp FSLH &kp RSHFT
                                            &kp LCTRL       &kp SPACE      &kp BSPC              &kp ESC    &kp RET    &key_repeat
@@ -34,7 +34,7 @@
 
                 base_win_layer {
                         bindings = <
-   &kp TAB     &kp Q         &kp W         &kp E          &kp R          &kp T                 &kp Y      &kp U      &kp I     &kp O   &kp P    &tog BASE_WIN 
+   &kp TAB     &kp Q         &kp W         &kp E          &kp R          &kp T                 &kp Y      &kp U      &kp I     &kp O   &kp P    &none 
    &kp LSHFT   &kp A         U_LT(SYM,S)   U_LT(NUM,D)    U_LT(NAV, F)   &kp G                 &kp H      &kp J      &kp K     &kp L   &kp SEMI &kp SQT
    &kp LCTRL   &kp Z         &kp X         &kp C          &kp V          &kp B                 &kp N      &kp M      &kp COMMA &kp DOT &kp FSLH &kp RSHFT
                                            &kp LCMD       &kp SPACE      &kp BSPC              &kp ESC    &kp RET    &key_repeat
@@ -44,7 +44,7 @@
 
                 nav_layer {
                         bindings = <
-   &none    &none       &none       &none       &none       &none                    &none     &none      &none      &none      &none  &none
+   &none    &none       &none       &none       &none       &none                    &none     &none      &none      &none      &none  &tog BASE_WIN
    &none    &none       &none       &none       &none       &none                    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &none  &none
    &none    &none       &none       &none       &none       &none                    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &none  &none
                                     &none       &none       &none                    &kp ESC   &kp RET    &key_repeat

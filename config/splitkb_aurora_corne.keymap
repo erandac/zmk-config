@@ -30,8 +30,8 @@
 //                    | GUI | SPC | BSPC|      | ESC | RET  | ALT |
                         bindings = <
    &kp TAB     &kp Q         &kp W         &kp E          &kp R          &kp T                 &kp Y      &kp U      &kp I     &kp O   &kp P    &none 
-   &kp LCTRL   &kp A         U_LT(SYM,S)   U_LT(NUM,D)    U_LT(NAV, F)   &kp G                 &kp H      &kp J      &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LSHFT   &kp Z         &kp X         &kp C          &kp V          &kp B                 &kp N      &kp M      &kp COMMA &kp DOT &kp FSLH &kp RSHFT
+   &kp LSHFT   &kp A         U_LT(SYM,S)   U_LT(NUM,D)    U_LT(NAV, F)   &kp G                 &kp H      &kp J      &kp K     &kp L   &kp SEMI &kp SQT
+   &kp LCTRL   &kp Z         &kp X         &kp C          &kp V          &kp B                 &kp N      &kp M      &kp COMMA &kp DOT &kp FSLH &kp RSHFT
                                            &kp LCMD       &kp SPACE      &kp BSPC              &kp ESC    &kp RET    &key_repeat
                         >;
                 };
